@@ -24,11 +24,12 @@ parole rhythmbox steam thunderbird transmission-gtk
 # --- Utilitaires --- #
 
 7zip arch-wiki-docs base-devel baobab bat bleachbit btop calcurse chafa cpupower dust 
-fastfetch galculator geany gnome-clocks gvfs gvfs-mtp imagemagick impression lact 
+fastfetch galculator geany gvfs gvfs-mtp imagemagick impression lact 
 libappindicator libmtp lxappearance micro network-manager-applet nwg-displays 
-pacman-contrib realtime-privileges ristretto starship timeshift trash-cli tumbler ufw unzip
-wev wget xarchiver yazi zathura zathura-pdf-mupdf zip zsh zsh-autosuggestions 
-zsh-completions zsh-history-substring-search zsh-syntax-highlighting
+pacman-contrib realtime-privileges ristretto starship termdown timeshift trash-cli 
+tumbler ufw unzip wev wget xarchiver yazi zathura zathura-pdf-mupdf zip 
+zsh zsh-autosuggestions zsh-completions zsh-history-substring-search 
+zsh-syntax-highlighting
 
 # --- Thèmes & polices --- #
 
