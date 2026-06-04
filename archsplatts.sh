@@ -31,8 +31,6 @@ if [ -t 0 ]; then
     read -p "Appuyez sur Entrée pour continuer... "
 fi   
 
-#!/bin/bash
-
  # --- 1.Reflector --- #
 echo -e "${JAUNE}Mise à jour de la liste des miroirs${NC}\n"
 
@@ -52,8 +50,6 @@ else
     echo -e "${ROUGE}⚠ Erreur lors de la génération de la liste des miroirs.${NC}"
     exit 1
 fi
-
-#!/bin/bash
 
 # --- 2.Activation du dépôt multilib et mise à jour du système --- #
 echo -e "${JAUNE}Activation du dépôt multilib${NC}\n"
@@ -84,8 +80,6 @@ else
     exit 1
 fi
 
-#!/bin/bash
-
 # --- 3.Installation des pilotes de la carte graphique --- #
  PAQUETS_AMD=(
 	"lib32-mesa"
@@ -104,8 +98,6 @@ else
     echo -e "${ROUGE}✗ Échec de l'installation.${NC}"
     exit 1
 fi
-
-#!/bin/bash
 
 # --- 4.Installation de Sway --- #
  PAQUETS_DE=(
@@ -149,8 +141,6 @@ else
     exit 1
 fi
 
-#!/bin/bash
-
 # --- 5.Installation des paquets M.A.O --- #
 PAQUETS_MAO=(
  	"guitarix" 
@@ -172,8 +162,6 @@ else
     echo -e "${ROUGE}✗ Échec de l'installation.${NC}"
     exit 1
 fi
-
-#!/bin/bash
 
 # --- 6.Installation des paquets multimedia --- #
 PAQUETS_MULTIMEDIA=(
@@ -206,8 +194,6 @@ else
     echo -e "${ROUGE}✗ Échec de l'installation.${NC}"
     exit 1
 fi
-
-#!/bin/bash
 
 # --- 7.Installation des utilitaires --- #
 PAQUETS_UTILS=(
@@ -268,8 +254,6 @@ else
     exit 1
 fi
 
-#!/bin/bash
-
 # --- 8.Installation des thèmes et des polices --- #
 PAQUETS_THEMES=(
 	"breeze-cursors" 
@@ -294,8 +278,6 @@ else
     echo -e "${ROUGE}✗ Échec de l'installation.${NC}"
     exit 1
 fi
-
-#!/bin/bash
 
 USER="${SUDO_USER:-$(whoami)}"
 
@@ -334,8 +316,6 @@ else
     echo -e "${VERT}✓ Yay est déjà installé pour $USER.${NC}"
 fi
 
-#!/bin/bash
-
 # --- 10.Activation des services système--- #
 echo -e "${JAUNE}Activation des services${NC}\n"
 
@@ -355,8 +335,6 @@ echo -e "${VERT}✓ LACT activé.${NC}"
 
 echo -e "${VERT}✓ Tous les services système ont été activés avec succès.${NC}\n"
 
-#!/bin/bash
-
 # --- 11.Configuration du shell ---#
 echo -e "${JAUNE}Configuration du shell Zsh${NC}\n"
 
@@ -367,8 +345,6 @@ else
     chsh -s /bin/zsh "$USER"
     echo -e "${VERT}✓ Shell changé avec succès.${NC}"
 fi
-
-#!/bin/bash
 
 # --- 12.Ajout de l'utilisateur aux groupes --- #
 echo -e "\n${JAUNE}Configuration des groupes utilisateur${NC}"
