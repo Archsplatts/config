@@ -1,25 +1,15 @@
 # --- Lancer le script archsplatts.sh --- #
 
-# --- Activer l'AUR helper et installer des paquets --- #
-	sudo pacman -S --needed base-devel git
-
-	git clone https://aur.archlinux.org/yay.git
-	cd yay
-	makepkg -si
-
+# --- Paquets AUR --- #
 yay -S --needed brave-origin-beta-bin papirus-folders tuxguitar
 
-#--- Activer le module NTSync ---#
-écrire ntsync dans le fichier /etc/modules-load.d/ntsync.conf
+#--- NTSync (Kernel > 6.14) ---#
+echo "ntsync" | sudo tee /etc/modules-load.d/ntsync.conf
 
-# --- Copier les dossiers config,Info & Wallpapers inclus --- #
-
-cp -r config/* /home/bloodsplatts/.config &&
-cp -r Info /home/bloodsplatts &&
-cp -r Wallpapers /home/bloodsplatts/Images
-
+# --- Mozilla theming --- #
 Firefox & thunderbird	importer fichiers .xpî
 
+# --- Thème SDDM --- #
 sddm	/etc/sddm.conf
 [Theme]
 Current=nom-du-theme
