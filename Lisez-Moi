@@ -20,6 +20,8 @@ sddm	/etc/sddm.conf
 [Theme]
 Current=nom-du-theme
 
+(Chemin des thèmes SDDM: /usr/share/sddm/themes)
+
 # --- Thèmes GTK ---#
 Catppuccin	https://www.gnome-look.org/u/catppuccin
 Matcha		https://www.gnome-look.org/p/1187179
