@@ -1,7 +1,7 @@
 @import "themes/catppuccin-default"
 
 configuration {
-    font: "UbuntuMono Nerd Font 40";  
+    font: "UbuntuMono Nerd Font 38";  
 }
 
 window {
@@ -9,17 +9,13 @@ window {
 	border:           	0px; 
 	border-color:     	@border-color;
 	border-radius:	  	18;
-    padding:          	14;
+	padding: 			20px;
 	transparency:       "real";
-    width:            	280px;              
+    width:            	340px;              
 }
 
 mainbox {
     enabled:                     true;
-    spacing:                     14px;
-    margin:                      0px;
-    padding:                     10px;
-    border-radius:               0px;
     border-color:                @selected;
     background-color:            transparent;
     children:                    [ "listview" ];
@@ -27,11 +23,10 @@ mainbox {
 
 listview {
 	border: 	0; 
-	columns:  	3;
+	columns:  	4;
 	flow: 		horizontal;
     lines:    	1;
 	scrollbar:	false;  
-    spacing:  	6px;         
 }
 
 inputbar {
