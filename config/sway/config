@@ -1,4 +1,4 @@
-## Variables
+# --- Variables --- #
 	set $mod Mod4
 	set $term foot
 	set $menu rofi -show drun -config ~/.config/rofi/applications-menu.rasi
@@ -6,23 +6,23 @@
 	set $web brave-origin-beta
 	set $texteditor geany
 
-## Output configuration
+# --- Output configuration --- #
 	output HDMI-A-1 resolution 1920x1080 position 0,0 
-	output * bg ~/Images/Wallpapers/blue-landscape.png fill
+	output * bg ~/Images/Wallpapers/horizon-2.jpg fill
 
-## Input configuration
+# --- Input configuration --- #
 	input type:keyboard {
 		xkb_layout "fr"
 		xkb_numlock enabled   
 	}
 
-## Appearance
+# --- Appearance --- #
 	gaps inner 10
 	default_border pixel 2
 	default_floating_border pixel 2
 	default_orientation auto
 
-## Key bindings
+# --- Keybinding --- #
 	bindsym $mod+Return exec $term
 	bindsym $mod+d exec $menu
 	bindsym $mod+e exec $filemanager
@@ -59,7 +59,7 @@
 	bindsym $mod+Shift+Up move up
 	bindsym $mod+Shift+Right move right  
  
-## Floating windows
+# --- Floating windows --- #
 	for_window [app_id="flameshot"] floating enable
 	for_window [app_id="galculator"] floating enable
 	for_window [app_id="io.gitlab.adhami3310.Impression"] floating enable
@@ -72,11 +72,10 @@
 	for_window [app_id="thunar" title="Opération sur des fichiers en cours"] floating enable
 	for_window [app_id="thunar" title="Renommer"] floating enable
 	for_window [app_id="transmission"] floating enable
-	for_window [class="VirtualBox" title="Q4OS - Settings"] floating enable
 	for_window [class="VirtualBox" title="VirtualBox - Preferences"] floating enable
 	for_window [app_id="xarchiver"] floating enable
 
-## Workspaces
+# --- Workspaces --- #
 	bindsym $mod+ampersand workspace number 1
 	bindsym $mod+eacute workspace number 2
 	bindsym $mod+quotedbl workspace number 3
@@ -89,7 +88,7 @@
 	bindsym $mod+shift+apostrophe workspace number 4
 	bindsym $mod+shift+parenleft workspace number 5
 
-## Utilities
+# --- Utilities --- #
     bindsym --locked XF86AudioRaiseVolume exec swayosd-client --output-volume raise
     bindsym --locked XF86AudioLowerVolume exec swayosd-client --output-volume lower
     bindsym --locked XF86AudioMute exec swayosd-client --output-volume mute-toggle
@@ -100,18 +99,19 @@
 	
 	bindsym --release Caps_Lock exec swayosd-client --caps-lock
 		
-## Autostart
+# --- Autostart --- #
 	exec_always killall autotiling; autotiling
 	exec  gammastep
+	exec mako
 	exec_always /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 	exec swayosd-server   
 
-## Bar
+# --- Bar --- #
 	bar {
 		swaybar_command waybar
 	}
 
-## Idle
+# --- Idle --- #
 #exec_always killall swayidle swaylock; \
 #swayidle -w \
 #    timeout 300 'swaylock -f -c 000000' \
@@ -119,7 +119,7 @@
 #    resume 'swaymsg "output * dpms on"' \
 #    before-sleep 'swaylock -f -c 000000'   
     
-## Portail de bureau (partage d'écran,notifications,policykit)
+# --- Desktop portal --- #
 	exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY 
 	exec systemctl --user import-environment XDG_CURRENT_DESKTOP
 
