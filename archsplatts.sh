@@ -165,7 +165,6 @@ fi
 
 # --- 6.Installation des paquets multimedia --- #
 PAQUETS_MULTIMEDIA=(
-	"amberol" 
 	"discord" 
 	"ffmpeg"
 	"firefox" 
@@ -180,6 +179,7 @@ PAQUETS_MULTIMEDIA=(
 	"lib32-gamemode"
 	"lib32-mangohud" 
 	"mangohud"
+	"rhythmbox"
 	"showtime" 
 	"steam" 
 	"thunderbird" 
