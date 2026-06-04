@@ -5,6 +5,7 @@ mkdir -p ~/Images/Wallpapers
 cd config
 cp -r config/* ~/.config
 cp -r Wallpapers/* ~/Images/Wallpapers
+cp -r zshrc ~/.zshrc
 
 # --- Paquets AUR --- #
 yay -S --needed brave-origin-beta-bin papirus-folders tuxguitar
