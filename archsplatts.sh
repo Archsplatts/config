@@ -266,7 +266,10 @@ PAQUETS_THEMES=(
 	"noto-fonts"
 	"noto-fonts-emoji"
 	"papirus-icon-theme" 
+	"ttf-hack-nerd"
 	"ttf-jetbrains-mono-nerd" 
+	"ttf-nerd-fonts-symbols"
+	"ttf-nerd-fonts-symbols-common"
 	"ttf-ubuntu-font-family" 
 	"ttf-ubuntu-mono-nerd"
 )
