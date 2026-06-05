@@ -1,30 +1,30 @@
 #!/bin/bash
 
 # Afficher le menu et capturer la sélection
-selection=$(echo -e "󰔛 05 minutes\n󰔛 10 minutes\n󰔛 15 minutes\n󰔛 20 minutes\n󰔛 25 minutes\n󰔛 30 minutes"| rofi -dmenu -config ~/.config/rofi/alarm-window.rasi)
+selection=$(echo -e "󰔛 05 min\n󰔛 10 min\n󰔛 15 min\n󰔛 20 min\n󰔛 25 min\n󰔛 30 min"| rofi -dmenu -config ~/.config/rofi/alarm-window.rasi)
 
 # Vérifier si une sélection a été faite
 if [[ -n "$selection" ]]; then
     case "$selection" in
-        "󰔛 05 minutes")
-			foot termdown -t Terminé -f standard 5m
+        "󰔛 05 min")
+			foot termdown -bt Terminé -f standard 5m
 			;;
-        "󰔛 10 minutes")
-			foot termdown -t Terminé -f standard 10m
+        "󰔛 10 min")
+			foot termdown -bt Terminé -f standard 10m
             ;;
-        "󰔛 15 minutes")
-        	foot termdown -t Terminé -f standard 15m
+        "󰔛 15 min")
+        	foot termdown -bt Terminé -f standard 15m
             ;;  
-        "󰔛 20 minutes")
-			foot termdown -t Terminé -f standard 20m
+        "󰔛 20 min")
+			foot termdown -bt Terminé -f standard 20m
             ;;      
               
-        "󰔛 25 minutes")
-			foot termdown -t Terminé -f standard 25m
+        "󰔛 25 min")
+			foot termdown -bt Terminé -f standard 25m
             ;;
          
-        "󰔛 30 minutes")
-			foot termdown -t Terminé -f standard 30m
+        "󰔛 30 min")
+			foot termdown -bt Terminé -f standard 30m
             ;;
     esac
 fi   
