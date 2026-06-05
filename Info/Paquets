@@ -7,8 +7,8 @@ vulkan-radeon
 
 autotiling brightnessctl flameshot foot gammastep grim mako pavucontrol 
 polkit polkit-gnome qt6-wayland rofi sddm sddm-kcm slurp sway swaybg swayidle swaylock 
-swayosd thunar thunar-archive-plugin thunar-volman waybar wl-clipboard wmenu 
-xdg-desktop-portal-gtk xdg-desktop-portal-wlr xorg-xwayland 
+swayosd thunar thunar-archive-plugin thunar-media-tags-plugin thunar-volman waybar 
+wl-clipboard wmenu xdg-desktop-portal-gtk xdg-desktop-portal-wlr xorg-xwayland 
 
 # --- Son & M.A.O --- #
 
