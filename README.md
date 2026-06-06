@@ -2,13 +2,13 @@ Script post installation ArchLinux avec une configuration Sway
 
 # --- Authentification --- #
 
-Gestionnaire de connexion	sddm (à activer au besoin)
+Gestionnaire de connexion	sddm
 
 # --- Eléments de l'interface --- #
 
 Barre d'état					waybar
 Lanceur d'applications			rofi
-Gestion des fenêtres			autotiling
+Gestion des fenêtres			sway,autotiling
 Notifications 					mako
 Indicateur de volume/Caps Lock	swayosd
 
