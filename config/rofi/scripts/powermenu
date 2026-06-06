@@ -12,7 +12,7 @@ case "$CHOSEN" in
         systemctl reboot
         ;;
 	"")
-
+		swaylock -f
 		;;
     "󰍃")
         swaymsg exit
