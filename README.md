@@ -1,5 +1,7 @@
 Script post installation ArchLinux avec une configuration Sway
 
+![script-preview](config/script-preview.png)
+
 # --- Authentification --- #
 
 Gestionnaire de connexion	sddm
