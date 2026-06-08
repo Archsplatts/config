@@ -14,7 +14,7 @@ while IFS= read -r WALLPAPER_PATH; do
 done <<<"$WALLPAPER_FILES"
 
 SELECTED_WALLPAPER=$(echo -e "$ROFI_MENU" | rofi -dmenu \
-  -p "Select Wallpaper:" \
+  -p "Choisir un fond d'écran:" \
   -theme "$IMAGE_PICKER_CONFIG" \
   -markup-rows)
 
