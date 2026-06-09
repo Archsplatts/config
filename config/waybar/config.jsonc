@@ -3,18 +3,17 @@
 	"position": "top",
 	"height": 32,
 	//"width": 1200,	
- 	"margin-top":10,
+ 	"margin-left": 10, 
 	"margin-right": 10,
-	"margin-left": 10, 
-	
+	"margin-top": 10,
 	
 	"modules-left": [
 		"custom/menu",
-		"sway/window"
+		"sway/window",
 	 ],
 
 	"modules-center": [
-		"sway/workspaces"	
+		"sway/workspaces",		
 	],
 	
 	"modules-right": [
@@ -22,8 +21,8 @@
 		"memory",	
 	    "cpu",
 		"temperature",
-		"clock",
 		"pulseaudio",
+		"clock",
 		//"custom/kernel",
 		//"disk#ssd",														
 		"tray",
@@ -35,7 +34,7 @@
 		"on-click": "rofi -show drun -config ~/.config/rofi/applications-menu.rasi",
 		"tooltip": false
 	},
-	
+
 	"sway/workspaces": {
 		"disable-scroll": true,
 		"persistent-workspaces": {
@@ -50,7 +49,8 @@
 	"sway/window": {
 		"max-length":35,
 		"rewrite": {
-			"foot": "Terminal"
+			"foot": "Terminal",
+			"cava": ""
 		}
 	},
 	"tray": {
@@ -83,7 +83,8 @@
 			"warning": 70,
 			"critical": 90
 		},
-	"on-click": "foot btop"
+	"on-click": "foot btop",
+	"tooltip": false,
 	},
 
    "temperature": {
@@ -93,7 +94,7 @@
         "critical-threshold": 90,
         "format-critical": "{temperatureC}°C {icon}",
         "format": "{temperatureC}°C {icon}",
-        "format-icons": ["", "", ""],
+        "format-icons": ["", "", "", "", ""],
         "tooltip": false
     },
 
@@ -136,8 +137,17 @@
 
 	"clock": {
 		"format": " {:%H:%M}",
-		"tooltip":true,
-		"tooltip-format": "{:%d.%m.%Y %H:%M}",
+		"tooltip-format": "{calendar}",
+	          "calendar": {
+	              "weeks-pos": "right",
+	              "mode": "month",
+	              "format": {
+	                  "months": "<span color='#cba6f7'><b>{}</b></span>",
+	                  "days": "<span color='#cdd6f4'><b>{}</b></span>",
+	  	              "weekdays": "<span color='#f9e2af'><b>{}</b></span>",
+	                  "today": "<span color='#f5e0dc'><b><u>{}</u></b></span>",
+	          },
+	    },
 		"interval": 60,
 		"timezone": "Europe/Paris",
 		"on-click": "foot calcurse"
@@ -151,4 +161,3 @@
 	}
 
 }
-
