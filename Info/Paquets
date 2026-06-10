@@ -19,7 +19,7 @@ reaper wireplumber
 
 discord ffmpeg ffmpegthumbnailer firefox flac gamemode gst-libav gst-plugins-bad 
 gst-plugins-base gst-plugins-good gst-plugins-ugly lib32-flac lib32-gamemode 
-lib32-mangohud mangohud parole rhythmbox steam thunderbird transmission-gtk
+lib32-mangohud mangohud mpv rhythmbox steam thunderbird transmission-gtk
  
 # --- Utilitaires --- #
 
