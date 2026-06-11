@@ -2,10 +2,9 @@
 	"layer": "top",
 	"position": "top",
 	"height": 32,
-	//"width": 1200,	
- 	"margin-left": 10, 
-	"margin-right": 10,
-	"margin-top": 10,
+ 	"margin-left": 8, 
+	"margin-right": 8,
+	"margin-top": 8,
 	
 	"modules-left": [
 		"custom/menu",
