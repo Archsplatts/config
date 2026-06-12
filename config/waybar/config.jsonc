@@ -109,8 +109,9 @@
         "tooltip": true,
         "warning": 70,
         "critical": 80,
-        "on-click": "baobab",
-        "tooltip": false
+	    "tooltip": true,
+	 	"tooltip-format": "{specific_used:.0f} Go utilisés",
+        "unit": "GB"
     },
         
 "pulseaudio": {
